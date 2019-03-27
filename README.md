@@ -8,7 +8,7 @@ The current version features basic game functionality including completing a sta
 
 Bricks have less pseudo-3D aspects than on the arcade version. This matter could be improved (it requires not just additional graphics but some new code as well) though very few players will notice anything. Also home computer ports seemed to have been lacking in this respect.
 
-The functioning of algorithms that pick removed tiles, is not properly tested.
+The functioning of algorithms that pick removed tiles is not properly tested.
 
 Known bugs:
 Score values are negative
