@@ -1,7 +1,8 @@
 # FreeKLAX
-UNIX port of 1990 arcade puzzle game
+The UNIX port of an arcade puzzle game from 1990 (the original game developed by Dave Akers and Mark Stephen Pierce)
 
-compile with GCC: g++ klax.cpp -lSDL2 -lSDL2_image -lSDL2_ttf -std=gnu++11 -o klax
+compile with GCC:
+g++ klax.cpp -lSDL2 -lSDL2_image -lSDL2_ttf -std=gnu++11 -o klax
 
 The current version features basic game functionality including completing a stage.
 
