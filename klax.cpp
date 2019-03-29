@@ -766,7 +766,6 @@ int where_empty_col(int col) {
 
 //Class function for randomizing values of a new tile and intializing other values. NOTE: Randomizer changes its value on each second, thus this function should not be used twice during the same second
 void tileclass::randomize_tile() {
-  srand((int)time(0));
   int random = rand()%8;
   switch(random) {
   case 0: colour = 'b'; break;
@@ -1937,7 +1936,7 @@ void new_phase() {
   tileflow = 2.4;
 }
 
-//A function that fills hiscore vector with contents of the scorestream (which is bind to a hiscore file)
+//A function that fills hiscore vector with contents of the scorestream (which is bound to a hiscore file)
 void genhiscore() {
   string name;
   string line;
@@ -2045,7 +2044,8 @@ int main(int argc, char*args[]) {
   scorestream.open(hiscofile.c_str()); //For some reason this has to be declared here, not within the global scope
   if(!scorestream) {cerr << "Cannot open hiscore-file" << endl; return -1;}
   genhiscore();
- 
+
+  srand((int)time(0));
   Uint32 timer1 = 0;
   Uint32 timer2 = 0;
 
